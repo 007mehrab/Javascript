@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript Operator</title>
+</head>
+<body>
+
+	<h2> Arithmetic Operator</h2>
+	<script>
+		
+		var a=5;
+		var b=5;
+		var c=5;
+		var d=5;
+
+		document.write(a++); //post increment operator
+
+		document.write("<br>");
+
+		document.write(a);
+
+		document.write("<br>");
+
+		document.write(++b);     //pre increment operator
+
+		document.write("<br>")
+
+		document.write(b)
+
+		document.write("<br>");
+
+		document.write(c--);     //post deccrement operator
+
+		document.write("<br>")
+
+		document.write(c)
+
+		document.write("<br>")
+
+		document.write(--d);     //pre deccrement operator
+
+		document.write("<br>")
+
+		document.write(d)
+
+		document.write("<br>");
+
+
+	</script>
+
+	<script>
+		var q=11;  
+		var s=2;
+
+		var r= q % s;
+
+		document.write(r); 
+
+		document.write("<br>")
+
+		document.write(10 + (5 * 2));
+
+		document.write("<br>");
+
+		document.write((10 + 5 )* 2);
+
+
+	</script>
+
+
+	<h2> Assignment Operator</h2>
+
+	<script>
+
+		var abc = "Hellow , ";
+
+		// abc += "How are you";
+
+		abc = abc + "How are you";
+
+		document.write(abc);
+		document.write("<br>")
+
+		var num1 = 50;
+
+		num1 += 50;
+		num1 *= 50;
+		//same: num1 = num1 * 50;
+		num1 /= 50;
+		num1 %= 60;
+
+		document.write(num1);
+
+	</script>
+
+	<h2>Comparison Operator</h2>
+
+	<script>
+		
+		var x = 10;
+		var y = 10;
+
+		if(x==y)
+		{
+			document.write("X and Y are Equel");
+		}
+
+		document.write("<br>")
+
+		var x = 10;
+		var y = 20;
+
+		if(x!=y)
+		{
+			document.write("X and Y are not Equel");
+		}
+
+		document.write("<br>")
+
+		var x = "10";
+		var y = "10";
+
+		if(x===y)
+		{
+			document.write("X and Y are Equel in value and type");
+		}
+
+		document.write("<br>")
+
+		var x = 10;
+		var y = "20";
+
+		if(x!==y)
+		{
+			document.write("X and Y are not Equel in value and type");
+		}
+
+		document.write("<br>")
+
+		var x = 30;
+		var y = 20;
+
+		if(x>y)
+		{
+			document.write("X is grater then y");
+		}
+
+		document.write("<br>")
+
+		var x = 10;
+		var y = 20;
+
+		if(x<y)
+		{
+			document.write("X is less then y");
+		}
+
+		document.write("<br>")
+
+		var x = 10;
+		var y = 10;
+
+		if(x<=y)
+		{
+			document.write("X is less then or equel y");
+		}
+
+
+		alert(typeof(abc))
+
+	</script>
+
+	<script>
+	var age = 26;
+var beverage = (age >= 21) ? "Beer" : "Juice";
+console.log(beverage);
+	</script>
+	
+</body>
+</html>
