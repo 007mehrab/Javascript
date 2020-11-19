@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS datatype</title>
+</head>
+<body>
+
+	<h2>Javascript Datatype and typeof</h2>
+	<script>
+		var x = 10;  //number datatype
+		var y = "Hellow World";  //string
+
+		var z = {firstName: "Mehrab", lastName: "Hossain"}; //object
+
+		document.write(z.firstName + " " + z.lastName);
+		document.write("<br>");
+
+		alert(typeof(y));
+
+		var p = true;
+
+		if(p){
+			document.write("P is available");
+		}
+		alert(typeof(p));
+
+		var p = false;
+
+		if(p){
+			document.write("P is available");
+		}
+		document.write("<br>");
+
+
+		var p = 15;
+		var q = 10;
+
+		if(p >q){
+			document.write("P is available");
+		}
+		document.write("<br>");
+
+		var p = 5;
+		var q = 10;
+
+		if(p < q){
+			document.write("q is available");
+		}
+		document.write("<br>");
+
+		var p = 15;
+		var q = 10;
+
+		if(p != q){
+			document.write("P is available");
+		}
+		document.write("<br>");
+
+		alert(typeof(p));
+
+
+
+	</script>
+
+    <h2>Array  and typeof</h2>
+
+	<script>
+		
+		var cars = ["Toyota", "Volvo", "BMW"];
+		document.write(cars);
+		document.write("<br>");
+
+		var fruts = ["Mango", "Apple", "Orange"];
+		document.write(fruts);
+		document.write("<br>");
+
+		var students = ["Name", "Roll", "Department"];
+		document.write(students);
+		document.write("<br>");
+
+		var z = {Name: "Mehrab", roll: "50"};
+		document.write(z.Name + " " + z.roll);
+		document.write("<br>");
+
+		alert(typeof(students));
+
+
+		var car ;
+		alert(typeof(car));
+
+	</script>
+
+
+
+</body>
+</html>
