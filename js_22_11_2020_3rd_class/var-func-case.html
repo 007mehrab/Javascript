@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Variable function Case</title>
+	<script>
+		var Tax =.05
+		function addTax(item){
+			var Total=item + (item * Tax);
+			var NewTotal=Math.floor(Total);
+			var Fraction=Math.round(Total * 100)%100;
+			  if(Fraction<10) 
+			    {
+			    	Fraction = "0" + Fraction;
+			    }
+			Total=NewTotal +  "." + Fraction;
+			alert("your total is $" + Total);
+		}
+	</script>
+</head>
+<body>
+	<a href="#" onClick="addTax(8.22)";> Click For Total</a>
+	
+</body>
+</html>
