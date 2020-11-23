@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS loop 1</title>
+
+</head>
+<body>
+
+	<h2>Students Information</h2>
+
+	 <table border="1" >
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+			</tr>
+
+		<script>
+			var Students = new Array("Mehrab", "Ismail","Alim","Siam");
+
+			for(var i =0; i<Students.length; i++)
+			{
+				x = i + 1
+				document.write("<tr><td>" + x + "</td>");
+				document.write("<td>" + Students[i] + "</td></tr>");
+				x++;
+			}
+		</script>
+	 </table>
+
+</body>
+</html>
