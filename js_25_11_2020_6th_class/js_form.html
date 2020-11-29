@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Forms</title>
+</head>
+<body>
+
+	<div id="show"></div>
+
+
+	<script>
+
+		function welcome(){
+			var Fname = document.personal_info.fname.value;
+			var Lname = document.personal_info.lname.value;
+			var Mail = document.personal_info.mail.value;
+			var Pnum = document.personal_info.pnum.value;
+			var Gender = document.personal_info.Gender.value;
+			var Address = document.personal_info.address.value;
+
+
+		var checkedValue = [];
+		var inputElements = document.getElementsByClassName('Skill');
+		for(var i=0; i<inputElements.length; i++){
+			if(inputElements[i].checked){
+				
+				checkedValue.push(inputElements[i].value );
+			
+			}
+		}
+
+
+			var fulldetails="<h1>Welcome - " + Fname +" "+ Lname +"<br> Mail : "+ Mail +"<br> Phone Number :" + Pnum +"<br> Gender : "+ Gender + "<br> Skills : " + checkedValue +"<br> Address : " + Address + " </h1>";
+			// return full;
+			// alert(full);
+			// var full="<h1>Welcome " + Fname +" "+ Lname + "! </h1>";
+
+			// document.getElementById('show').innerHTML = fulldetails;
+			document.write(fulldetails);
+		}
+
+	</script>
+
+	<form action="" name="personal_info">
+
+		<label for="">First Name</label><br>
+		<input type="text" name="fname" placeholder="Enter first name" ><br><br>
+
+		<label for="">Last Name</label><br>
+		<input type="text" name="lname" placeholder="Enter last name"><br><br>
+
+		<label for="">Email</label><br>
+		<input type="text" name="mail" placeholder="Enter Your Email address"><br><br>
+
+		<label for="">Pnone Number</label><br>
+		<input type="text" name="pnum" placeholder="Enter your phone number"><br><br>
+
+		<label for="">Gender : </label>
+		Male<input type="radio" name="Gender" value="Male">
+		Female<input type="radio" name="Gender" value="Female"><br><br>
+		
+		<label for="">Skills : </label>
+		HTML<input class="Skill" type="checkbox"  value="HTML">
+		CSS<input class="Skill" type="checkbox"  value="CSS">
+		Bootstrap<input class="Skill" type="checkbox"  value="Bootstrap">
+		Javascript<input class="Skill" type="checkbox"  value="Javascript">
+		Laravel<input class="Skill" type="checkbox"  value="Laravel">
+		PHP<input class="Skill" type="checkbox" value="PHP"><br><br>
+
+		<label for="">Address</label><br>
+		<textarea name="address" id="" cols="30" rows="10"></textarea><br><br>
+
+
+
+		<button onclick="welcome()">Send</button>
+	</form>
+
+	<!-- <script>
+		var x = document.personal_info.fname.value;
+		alert(x);
+	</script> -->
+</body>
+</html>

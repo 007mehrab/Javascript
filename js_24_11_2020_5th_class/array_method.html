@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array Method</title>
+</head>
+<body>
+	<h2>Array Push , pop, shift, unshift</h2>
+	<!-- <script>
+		var students = new Array("Ilies", "Mehrab","Parvez");
+
+		students.pop();
+		document.write(students);  //Remove item from last data
+
+		document.write("<br>");
+
+		students.push("Amir");
+		document.write(students);   //add item from last data
+
+		document.write("<br>");
+
+		students.shift();
+		document.write(students);   //Remove item from first data
+
+		document.write("<br>");
+
+		students.unshift("sakib");
+		document.write(students);   //add item from first data
+
+	</script> -->
+
+	<h2>Array splice</h2>
+
+	<script>
+		var fruits = ["Banana","Apple","Mango","Orange","Coconut","Jackfruit"];
+
+		document.write(fruits);  
+
+		document.write("<br>");
+
+		fruits.splice(0, 0, "Lemon", "kiwi");   //Add item from first data (first 0 means-where data add and 2nd 0 means- where data delete)
+
+		document.write(fruits);
+
+		document.write("<br>");
+
+		fruits.splice(2, 2, "Nut","Lichi");   //Add item from 2nd data and delete item 2nd element 2 data
+		document.write(fruits);
+
+		document.write("<br>");
+
+
+	</script>
+
+	<h2>Array slice</h2>
+
+	<script>
+		computer=["Dell","Hp","Apple","IBM","Gateway","Ascer"];
+		computer1 = computer.slice(1,4);
+		computer2 = computer.slice(1,3);
+		computer3 = computer.slice(2);
+		computer4 = computer.slice(-3, -1);
+		computer5 = computer.slice(-3);
+
+
+		document.write(computer);
+		document.write("<br>");
+
+		document.write(computer1);
+		document.write("<br>");
+
+		document.write(computer2);
+		document.write("<br>");
+
+		document.write(computer3);
+		document.write("<br>");
+
+		document.write(computer4);
+		document.write("<br>");
+
+		document.write(computer5);
+		document.write("<br>");
+
+
+
+
+	</script>
+
+
+	<h2>Array Join</h2>
+
+	<script>
+		var trees = new Array("Elm","Pine","Oak","Mango");
+		// var bigBush=trees.join();
+		// document.write(bigBush);
+		// document.write("<br>");
+
+		var bigBush=trees.join(" / and ");
+		document.write(bigBush);
+
+	</script>
+
+	<h2>Number to String</h2>
+
+	<!-- <script>
+		var x = 200;
+		var r = x.toString();
+		document.write(x);
+
+		alert(typeof(r));
+
+	</script> -->
+
+	<h2>Array Concat</h2>
+
+	<script>
+		var trees = new Array("Elm","Pine","Oak","Mango");
+		var moretrees = trees.concat("Grape","Jackfruit");
+
+		document.write(moretrees);
+		document.write("<br>");
+
+	</script>
+
+	<script>
+
+		var trees = new Array("Elm","Pine","Oak","Mango");
+		var moretrees = trees.concat("Grape","Jackfruit");
+
+			for (var i=0; i<moretrees.length; i++) {
+		    document.write(i + "-" + moretrees[i] + "<br>");
+		}
+
+		document.write("<br>");
+
+		var trees = new Array("Elm","Pine","Oak","Mango");
+		var moretrees = trees.concat("Grape","Jackfruit");
+
+			for (var i=0; i<moretrees.length; i++) {
+				x=i+1
+		    document.write(x + "-" + moretrees[i] + "<br>");
+		    x++;
+		}
+			
+	</script>
+
+
+</body>
+</html>

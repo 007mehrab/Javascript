@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>For In Loop Operator</title>
+</head>
+<body>
+
+	<script>
+		var airFlock = "";
+		var airplane = new Array("Cessna","Piper","Maula", "Money","Fake")
+
+		for(var counter in airplane){
+
+			airFlock += airplane[counter] + "<br>";
+		}
+		document.write(airFlock + "<br>");
+
+	</script>
+	
+	<div id="list">
+		<ol>
+		
+	<script>
+		var airFlock = "";
+		var airplane = new Array("Cessna","Piper","Maula", "Money","Fake")
+
+		for(var counter in airplane){
+			
+			airFlock += "<li>" + airplane[counter] + "</li>";
+		}
+		document.write(airFlock + "<br>");
+
+	</script>
+	</ol>
+	</div>
+
+	<script>
+		var airFlock = "";
+		var airplane = new Array("Cessna","Piper","Maula", "Money","Fake")
+
+		for(var counter in airplane){
+			
+			airFlock += "<li>" + airplane[counter] + "</li>";
+		}
+		document.write("<ol>" + airFlock + "</ol>");
+
+	</script>
+
+	<script>
+		var airFlock = "<ol>";
+		var airplane = new Array("Cessna","Piper","Maula", "Money","Fake")
+
+		for(var counter in airplane){
+			
+			airFlock += "<li>" + airplane[counter] + "</li>";
+		}
+		airFlock +="</ol>";
+		document.write(airFlock);
+
+	</script>
+
+</body>
+</html>

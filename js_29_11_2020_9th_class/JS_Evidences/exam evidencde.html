@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Evidence</title>
+</head>
+<body>
+	<!-- <script>
+		var MCQ =parseInt(prompt("MCQ"));
+		var Descriptive =parseInt(prompt("Descriptive"));
+		var Evidence =parseInt(prompt("Evidence"));
+
+		var display1,display2,display3;
+
+		switch(true){
+			case MCQ>=80:
+			display1 = "You Have Passed";
+			break;
+			default:
+			display1 = "You Have Fail";
+		}
+		switch(true){
+			case Descriptive>=70:
+			display2 = "You Have Passed";
+			break;
+			default:
+			display2 = "You Have Fail";
+		}
+		switch(true){
+			case Evidence>=60:
+			display3 = "You Have Passed";
+			break;
+			default:
+			display3 = "You Have Fail";
+		}
+
+		document.write(display1 + "<br>");
+		document.write(display2 + "<br>");
+		document.write(display3 + "<br>");
+
+	</script> -->
+
+
+	<form action="" name="myform">
+
+		<label for="">MCQ</label><br>
+		<input type="number" name="MCQ"><br><br>
+
+		<label for="">Descriptive</label><br>
+		<input type="number" name="Descriptive"><br><br>
+
+		<label for="">Evidence</label><br>
+		<input type="number" name="Evidence"><br><br>
+
+		<button name="btn" onclick="result()">Result</button>
+	</form>
+
+	<script>
+		function result(){
+			var x = document.myform.MCQ.value;
+			var y = document.myform.Descriptive.value;
+			var z = document.myform.Evidence.value;
+
+			if(x>=80 && y>=70 && z>=60){
+				document.write("You have passed");
+			}
+			else{
+				document.write("You have Failed");
+			}
+		}
+	</script>
+
+	<script>
+		function result(){
+			var x = document.myform.MCQ.value;
+			var y = document.myform.Descriptive.value;
+			var z = document.myform.Evidence.value;
+
+			if((x>=80 && x<=100) || (y>=80 && y<=100) || (z>=80 && z<=100))
+			{
+				document.write("You have passed");
+			}
+			
+			if else{
+				document.write("You have Failed");
+			}
+			else {
+				document.write("Overflow");
+		}
+	</script>
+</body>
+</html>

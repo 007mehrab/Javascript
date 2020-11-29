@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculation</title>
+</head>
+<body>
+	<form action="" name="myfrom">
+		<input type="number" name="num1">
+		<input type="number" name="num2"><br><br>
+
+		<label for="">Result</label>
+		<input type="text" name="fullResult"><br><br>
+
+		<input type="button" value="Sum" onclick="sum()">
+		<input type="button" value="sub" onclick="sub()">
+		<input type="button" value="mul" onclick="mul()">
+		<input type="button" value="div" onclick="div()">
+	</form>
+
+	<!-- <div id="demo"> -->
+
+	<script>
+		var n1,n2,sum,sub,mul,div;
+
+		function sum(){
+			n1=parseInt(document.myfrom.num1.value);
+			n2=parseInt(document.myfrom.num2.value);
+
+		    sum = n1 + n2;
+
+		    // document.getElementById("demo").innerHTML = sum;
+			document.write(sum);
+		}
+		
+
+		function sub(){
+			n1=parseInt(document.myfrom.num1.value);
+			n2=parseInt(document.myfrom.num2.value);
+
+		    sub = n1 - n2;
+			document.write(sub);
+		}
+
+		function mul(){
+			n1=parseInt(document.myfrom.num1.value);
+			n2=parseInt(document.myfrom.num2.value);
+
+		    mul = n1 * n2;
+			document.write(mul);
+		}
+
+		function div(){
+		n1=parseInt(document.myfrom.num1.value);
+		n2=parseInt(document.myfrom.num2.value);
+
+		    div = n1 / n2;
+			document.write(div);
+		}
+	</script>
+	</div>
+
+	<!-- <button onclick="sum()">sum</button>
+	<button onclick="sub()">sub</button>
+	<button onclick="mul()">mul</button>
+	<button onclick="div()">div</button> -->
+</body>
+</html>

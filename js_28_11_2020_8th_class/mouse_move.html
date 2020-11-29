@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mouse Move Function</title>
+</head>
+<body>
+	<form action="" name="myform">
+		<input type="text" name="number">
+	</form>
+
+	<script>
+		var result = 0;
+
+		function mouseMove(){
+			result += 1;
+			document.myform.number.value = result;
+		}
+	</script>
+
+	<a href="" onmousemove ="mouseMove()">Move your Mouse here</a>
+</body>
+</html>

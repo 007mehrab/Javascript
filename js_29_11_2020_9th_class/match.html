@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Match</title>
+</head>
+<body>
+	<script>
+		var matchThis = "Play it again Sam";
+		var find = matchThis.match(/Sam/i);
+		document.write(find);
+	</script>
+<br><br>
+	<script>
+		var line = "Sam,Play it again sam";
+		var output = line.match(/sam/gi);
+		document.write(output);
+	</script>
+<br><br>
+	<script>
+		var line = "Sam,Play it again sam";
+		var output = line.match(/sam/i);
+		document.write(output);
+	</script>
+<br><br>	
+	<script>
+		var line = "Sam,Play it again sam";
+		var output = line.match(/sam/g);
+		document.write(output);
+	</script>
+</body>
+</html>

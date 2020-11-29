@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>split</title>
+</head>
+<body>
+	<script>
+		var splitThis = "Play it again Sam";
+		var split = splitThis.split(/ /i);  //split show coma
+		document.write(split);
+	</script>
+<br><br>
+	<script>
+		var splitThis = "Play it again Sam";
+		var split = splitThis.split(/it/i);    //fixed data hide and 
+		                                       //show another data with coma
+		document.write(split);
+	</script>
+<br><br>
+	<script>
+		var splitThis = "Play it again Sam";
+		var split = splitThis.split(/ /i);
+		document.write(split + "<br>");     //split is working in array type
+		// document.write(typeof(split));
+		document.write(split[0]+ "<br>");
+		document.write(split[1]+ "<br>");
+		document.write(split[2]+ "<br>");
+		document.write(split[3]+ "<br>");
+
+	</script>
+</body>
+</html>

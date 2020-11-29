@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=`, initial-scale=1.0">
+	<title>On Focus</title>
+</head>
+<body>
+
+	<script>
+
+		function fillit(){
+			
+			document.myform.email.value = "mahrab.bhuiyan@gmail.com";
+			document.myform.email.style.backgroundColor = "yellow";  //color in
+		}
+
+		function clearit(){
+			
+			document.myform.email.value = " ";
+			document.myform.email.style.backgroundColor = "red";  //color out
+		}
+
+	</script>
+
+
+	<form action="" name="myform">
+
+		<input type="email" name="email" onfocus="fillit()" onblur="clearit()">
+		<br>
+		<input type="text" name="name" onfocus="">
+
+	</form>
+
+	
+
+</body>
+</html>

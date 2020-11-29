@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Replace in Regular Expression</title>
+</head>
+<body>
+	<script>
+		var work = "Working with Javascript is hard work but rewarding work";
+		var play = work.replace(/Work/gi, "play"); //regular expression
+
+		document.write(work + "<br>");
+		document.write("<b>" + play +"</b>");
+	</script>
+
+	<br>
+	<br>
+
+	<script>
+		var name = "My name is Mehrab";
+		var cname = name.replace(/Mehrab/g, "parvez"); //regular expression without[i]
+
+		document.write(name + "<br>");
+		document.write("<b>" + cname +"</b>");
+	</script>
+<br><br>
+	<script>
+		var name = "My name is mehrab and Mehrab";
+		var cname = name.replace(/mehrab/gi, "parvez"); //regular expression with [i]
+
+		document.write(name + "<br>");
+		document.write("<b>" + cname +"</b>");
+	</script>
+
+</body>
+</html>
