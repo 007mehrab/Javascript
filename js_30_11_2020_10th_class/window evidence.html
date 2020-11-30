@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<form action="" name="myform">
+		<form action="" name="myform">
+		FullName <br> <input type="text" name="fullname"><br>
+		Address <br> <textarea id="" cols="30" rows="10" name="address"></textarea><br>
+		Gender :  
+		Male<input type="radio" name="gender" value="male">
+		Female<input type="radio" name="gender" value="female"> <br><br>
+
+		<!-- <button type="button" onclick="myfunc()">Send</button> -->
+	</form>
+
+	<br><br>
+
+	<script>
+		var mywindow;
+		
+		function openwin(){
+		    var fn =  document.myform.fullname.value;
+			var add = document.myform.address.value;
+			var gen = document.myform.gender.value;
+
+			var output ="Fullname : " + fn+ "<br>\n Address :" + add + "<br>\n Gender :" + gen;
+
+			mywindow = window.open("", "mywindow", "height=300", "width=400");
+			mywindow.document.write(output);
+		}
+
+		function closewin(){
+		  mywindow.close();
+		}
+
+	</script>
+
+    <button onclick="openwin()">Submit</button>
+	<button onclick="closewin()">close Window</button> 
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Window Open</title>
+</head>
+<body>
+	<h2>lick the button to open a new browser window.</h2>
+	<!-- <script>
+		function myfunction(){
+			window.open("https://www.w3schools.com");
+		}
+
+		function myfunction2(){
+			window.close("https://www.w3schools.com");
+		}
+	</script>
+	<button onclick="myfunction()">Open Window</button>
+	<button onclick="myfunction2()">close Window</button> -->
+
+	<script>
+
+		var mywindow;
+		
+		function openwin(){
+		  mywindow =	window.open("", "mywindow", "height=300", "width=400");
+
+		  mywindow.document.write("<h1> Hellow </h1>")
+		}
+
+		function closewin(){
+		  mywindow.close();
+		}
+	</script>
+
+	<button onclick="openwin()">Open Window</button>
+	<button onclick="closewin()">close Window</button> 
+
+</body>
+</html>

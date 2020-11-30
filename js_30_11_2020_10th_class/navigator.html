@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nevigator</title>
+</head>
+<body>
+	<script>
+		    var appcode = self.navigator.appCodeName;
+		    var appname = self.navigator.appName;
+		    var appversion = self.navigator.appVersion;
+		    var platform = self.navigator.platform;
+		    var userAgent = self.navigator.userAgent;
+
+
+			var message =  " AppCodeName :" + appcode + "\n";
+			    message += " AppName :" + appname + "\n";
+			    message += " Appversion :" + appversion + "\n";
+			    message += " Platform :" + platform + "\n";
+			    message += " UserAgent :" + userAgent + "\n";
+
+
+			 alert(message);
+			// document.write(message);
+
+	</script>
+</body>
+</html>

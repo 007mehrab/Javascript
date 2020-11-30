@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hierarchy function</title>
+</head>
+<body >
+	<script>
+		function doit(){
+			// document.myform.fullname.value= prompt();
+			document.myform.fullname.value = "Mehrab";
+			document.myform.submit.value = "I have clicked";
+		}
+	</script>
+
+	<form action="" name="myform">
+		<input type="text" name="fullname">
+		<input type="button" name="submit" value="submit" onclick="doit()">
+		<!-- <input type="reset" name="reset" value="Reset"> -->
+		<button onclick="javascript:window.document.myform.reset()">RESET</button>
+
+	</form>
+</body>
+</html>
