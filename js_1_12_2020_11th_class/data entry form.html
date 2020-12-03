@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Data Entry Form</title>
+	<style>
+		*{
+			margin: 0 auto;
+		}
+		form{
+			background-color: #A7BFC9;
+			padding: 10px;
+			width: 300px;
+			height: 230px;
+			border: 1px solid #3B2020;
+		}
+		input{
+			float: right;
+		}
+	</style>
+</head>
+<body align="center">
+
+	<script>
+		var mywindow
+
+		function stform(){
+			var a=document.forms['myform']['id'].value;
+			var b=document.forms['myform']['name'].value;
+			var c=document.forms['myform']['course'].value;
+			var d=document.forms['myform']['year'].value;
+
+			if(a==null || a=="")
+			{
+				alert("Please Enter Your Id");
+				
+			}
+			else if(b==null || b=="")
+			{
+				alert("Please Enter Your Name");
+				return false;
+				
+			}
+			else if(c==null || c=="")
+			{
+				alert("Please Enter Your Course");
+				return false;
+				
+			}
+			else if(d==null || d=="")
+				
+			{
+				alert("Please Enter Your Year/Section");
+				return false;
+			}
+			else
+			{
+				alert("Succesfully complete form")
+				
+			}
+
+			// document.write(a+b+c+d);
+			mywindow =	window.open("", "mywindow", "height=300", "width=400");
+
+				mywindow.document.write("Your Id :" + a + "<br> Your Name :" + b + "<br> Your Course :" + c + "<br> Your Year/Section :" + d);
+
+		}
+
+	</script>
+
+	<form name="myform" align="center" onSubmit="return stform()" onclick="closewin()">
+		
+		<h2>Data Entry Form</h2><br>
+
+		<FIELDSET>
+
+		<label for="">Student id:</label>
+		<input type="text" name="id"><br><br>
+
+		<label for="">Name :</label>
+		<input type="text" name="name"><br><br>
+
+		<label for="">Course :</label>
+		<input type="text" name="course"><br><br>
+
+		<label for="">Year/Section :</label>
+		<input type="text" name="year"><br><br>
+
+		<input type="submit" name="submit" value="Save" />
+
+		</FIELDSET>
+
+	</form>
+
+</body>
+</html>
