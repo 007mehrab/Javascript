@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Timing Set</title>
+</head>
+<body onload="interval()">        <!-- interval Set -->
+
+	<img src="sanfran.jpg" name="change" alt="">
+
+	<script>
+		function interval(){
+			alpha=window.setInterval("document.change.src='newyork.jpg'",3000);
+		}
+	</script>
+
+
+
+
+
+	<!-- Timing set -->
+
+	<script>
+		function interval(){
+			alpha=window.setTimeout("document.change.src='newyork.jpg'",3000);
+		}
+	</script>
+
+	<!-- Another set -->
+
+	<p>Click "Try it". Wait 3 seconds, and the page will alert "Hello".</p>
+
+	<button onclick="setTimeout(myFunction, 2000);">Try it</button>
+
+	<script>
+		function myFunction() {
+			alert('Hello');
+		}
+	</script>
+	
+
+	<p>A script on this page starts this clock:</p>
+
+	<p id="demo"></p>
+
+	<script>
+		var myVar = setInterval(myTimer, 1000);
+
+		function myTimer() {
+			var d = new Date();
+			document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+		}
+	</script>
+
+</body>
+</html>

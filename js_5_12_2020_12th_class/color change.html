@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function message(x) {
+			//document.forms[0].elements[5].value=x;
+			document.forms[1].elements[0].value=x;
+		}
+	</script>
+	<H2> Big Font </h2>
+		    <form>       <!--Form 0-->
+			<input type=button value="Red" onClick="document.bgColor='red'"
+			onMouseDown="message('red')">
+
+			<input type=button value="Green" onClick="document.bgColor='green'"
+			onMouseOver="message('green')">
+
+			<input type=button value="Blue" onClick="document.bgColor='blue'"
+			onMouseMove="message('blue')"><br>
+
+			<input type=button value="Font Color to Yellow"
+			onClick="document.fgColor='yellow'"> <br>
+			<input type=button value="Font Color to Firebrick"
+			onClick="document.fgColor='white'"> <p>
+				<!-- <input type=text> -->
+			</form>
+
+			<h2>Second Form</h2>  <!--Form 1-->
+			<form action="">
+				<input type="text" name="name" value="Mehrab">
+			</form>
+		</body>
+		</html>

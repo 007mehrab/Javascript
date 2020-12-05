@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Variable and Object</title>
+</head>
+<body bgcolor="mintcream" >
+
+<script>
+//Constructor Function
+function Mall(stName,shop,product) {
+	this.stName=stName;
+	this.shop=shop;
+	this.product=product;
+}
+var Bloomfield= new Mall("Bloomy","Nuts and Lightning Bolts","Organic")
+var display= Bloomfield.stName + "<br>";
+display += Bloomfield.shop + "<br>";
+display += Bloomfield.product;
+
+document.write(display);
+
+</script>
+
+<br>
+
+<script>
+var Mall= new Object(); 
+Mall.shops="Vinny's Gun and Medical Supply Shop";
+//var Mall;
+//Mall.shops="Louie's Used Golf Club Emporium and Discount Analysis
+//Clinic";
+document.write(Mall.shops);
+</script>
+
+</body>
+</html>
