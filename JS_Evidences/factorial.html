@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculate the factorial of a number.</title>
+</head>
+<body>
+<!-- <script>
+function factorial(x) 
+{ 
+
+  if (x === 0)
+ {
+    return 1;
+ }
+  return x * factorial(x-1);
+         
+}
+//console.log(factorial(5));	
+document.write(factorial(4));		
+</script> -->
+
+<!--Factorial with For Loop-->
+<script>
+	function factCalc() {
+		var num = document.myform.num.value;
+		//var num = 5;
+		var fact = 1;
+		for(var i = num; i>=1; i--) {
+			fact =  fact * i;
+		}
+		alert(fact);
+	}
+</script>
+
+<form name="myform">
+	<input type="number" name="num">
+	<input type="button" name="calculate" value="GO" onclick="factCalc()">
+</form>
+
+</body>
+</html>

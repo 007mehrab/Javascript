@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<form action="" name="myform">
+
+		<input type="date" name="dd">
+		<input type="submit" value="Day" onclick="myFunction()">
+
+	</form>
+
+		<script>
+		function myFunction() {
+			var x = document.myform.dd.value;
+			var y = new Date(x);
+			var weekday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+
+			var z = weekday[y.getDay()];
+			alert(z);
+			
+		}
+	</script>
+</script>
+</body>
+</html>

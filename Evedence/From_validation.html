@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<style>
+		.forms{
+			background-color: lightgray;
+			padding: 10px;
+			border: 2px solid : gray;
+			width: 300px;
+
+		}
+	</style>
+
+</head>
+<body>
+
+	<script >
+		var mywindow;
+		function myfunc(){
+			var name= document.myform.Fname.value;
+			var Contact= document.myform.Contact.value;
+			var remarks= document.myform.remarks.value;
+			var gender = document.myform.gender.value;
+			var Location = document.myform.Location.value;
+
+			var checkedValue = [];
+			var inputElements = document.getElementsByClassName('skill');
+			for(var i=0; i<inputElements.length; i++){
+				if(inputElements[i].checked){
+					checkedValue.push(inputElements[i].value);
+
+				}
+			}
+
+
+			mywindow = window.open("", "mywindow", "width=400","height=200");
+			mywindow.document.write("Your Name: " + name +"<br> Contact : " +Contact +" <br> Remarks : " + remarks+" <br> Gender : " +gender+ " <br> Location : " +Location+ "<br>" + "<br> Courses : " + checkedValue);
+
+
+		}
+	</script>
+
+	<center>
+		<form action="" name="myform" method="post" class="forms">
+			<label for="">Your Name:</label><br>
+			<input type="text" name="Fname" placeholder="Enter Your Name"><br>
+
+			<label for="">Contact:</label><br>
+			<input type="text" name="Contact" placeholder="Contect Number"><br>
+
+			<label for="">Remarks:</label><br>
+			<textarea name="remarks" id="" cols="30" rows="10"></textarea><br><br>
+
+			<label for="">Sex:</label>
+			Male <input type="radio" name="gender" value="Male">
+			Female <input type="radio" name="gender" value="Female"><br><br>
+
+
+			<label for="">Courses:</label>
+			NT<input type="checkbox" class="skill" value="NT">
+			IAD<input type="checkbox" class="skill" value="IAD">
+			DDD<input type="checkbox" class="skill" value="DDD">
+			ESAD<input type="checkbox" class="skill" value="ESAD"><br><br>
+
+			<label for="">Select Location:</label><br>
+			<select name="Location">
+				<option value="" hidden="">select</option>
+				<option value="Banani" >Banani</option>
+				<option value="Dhanmondi">Dhanmondi</option>
+				<option value="Mirpur">Mirpur</option>
+				<option value="Agargaon">Agargaon</option>
+			</select><br><br>
+
+			<button  onclick="myfunc()">Submit</button>
+
+		</form>
+	</center>
+
+
+</body>
+</html>

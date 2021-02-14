@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+		function myfunc(){
+			var fullname = document.myform.fullname.value
+			var gender=document.myform.gender.value;
+			var phone=document.myform.phone.value;
+			var email = document.myform.email.value;
+			var confirmEmail = document.myform.confirmEmail.value;
+			
+
+			if (fullname == "" || fullname == null) {
+				alert("Please Enter Your Name");
+			}
+			else if (gender == "" || gender == null) {
+				alert("Please Enter Your Gender");
+			}
+			else if (phone == "" || phone == null) {
+				alert("Please Enter Your phone");
+			}
+			
+			else if(true){
+			var emailvalid=/[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}$/i;
+
+			if(email.search(emailvalid)==-1){
+
+				alert("Please Enter Valid E-mail Address");
+
+			}else if(email!= confirmEmail){
+				alert("E-mail Address Does Not Matching");
+
+			}else{
+				alert("Your E-mail Address Is valid");
+			}
+		    }
+
+			else {
+				alert("Succesfully Validated");
+				// var myWindow = window.open("", "MsgWindow", "width=400,height=300");
+				// myWindow.document.write("<h1>You have submitted</h1>");
+				// myWindow.document.write("<p>Name:"+ fullname + "</p>");
+				// myWindow.document.write("<p>Gender:"+ gender + "</p>");
+				// myWindow.document.write("<p>Phone:"+ phone + "</p>");
+				// myWindow.document.write("<p>Email:"+ mail + "</p>");
+			}
+
+		}
+	</script>
+	
+
+	<form action="" name="myform">
+		Fullname <br>
+		<input type="text" name="fullname"><br><br>
+
+		Gender :
+		Male<input type="radio" name="gender" value="male" />
+		Female<input type="radio" name="gender" value="female"/><br><br>
+
+		Phone <br>
+		<input type="text" name="phone"><br><br>
+
+		Email <br>
+		<input type="text" name="email" value=""><br>
+		Confarn Email <br>
+		<input type="text" name="confirmEmail" value=""><br>
+
+		<input type="button" value="SUBMIT" onclick="myfunc()">
+
+	</form>
+
+
+</body>
+</html>

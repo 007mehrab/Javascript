@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+
+		function myfunc(){
+		var email = document.myform.email.value;
+		var confirmEmail = document.myform.confirmEmail.value;
+
+
+		var emailvalid=/[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}$/i;
+
+			if(email.search(emailvalid)==-1){
+
+				alert("Please Enter Valid E-mail Address");
+
+			}else if(email!= confirmEmail){
+				alert("E-mail Address Does Not Matching");
+
+			}else{
+				alert("Your E-mail Address Is valid");
+			}
+
+		}
+	</script>
+	 
+
+	<form action="" name="myform">
+
+		Email <br>
+		<input type="text" name="email" value=""><br>
+		Confarn Email <br>
+		<input type="text" name="confirmEmail" value=""><br>
+
+		<input type="button" value="Submit" onclick="myfunc()">
+
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Evidence</title>
+</head>
+<body>
+	<form action="" name="myform">
+
+		<label for="">MCQ</label><br>
+		<input type="number" name="MCQ"><br><br>
+
+		<label for="">Descriptive</label><br>
+		<input type="number" name="Descriptive"><br><br>
+
+		<label for="">Evidence</label><br>
+		<input type="number" name="Evidence"><br><br>
+
+		<button name="btn" onclick="result()">Result</button>
+	</form>
+
+	<script>
+		function result(){
+			var x = document.myform.MCQ.value;
+			var y = document.myform.Descriptive.value;
+			var z = document.myform.Evidence.value;
+
+			if(x>=80 && y>=70 && z>=60){
+				document.write("You have passed");
+			}
+			else{
+				document.write("You have Failed");
+			}
+		}
+	</script>
+	
+</body>
+</html>

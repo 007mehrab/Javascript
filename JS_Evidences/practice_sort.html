@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var students = new Array("Mehrab","Parvez","Siam","Alim","Shakib");
+
+		document.write("After Sort: <br><br>");
+		document.write(students + "<br><br>");
+		
+		students.sort();
+		document.write("Before Sort <br>")
+
+		for (var i = 0; i < students.length; i++) {
+			var x=i+1;
+			document.write(x + ": " + students[i] + "<br>");
+			x++;
+		}
+
+	</script>
+</body>
+</html>
